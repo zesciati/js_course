@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!--Memberitahu browser untuk menggunakan versi terbaru HTML -->
+<html lang="en"> <!--Menunjukkan seluruh WebPage-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <!-- <style>
+       .red-button{
+           background-color: rgb(196, 60, 60);
+           color: white;
+           border: none;
+       }
+       .yellow-button{
+           background-color: yellow;
+       }
+       .cart{
+           background-color: yellow;
+       }
+       .buy{
+           background-color: orange;
+       }
+   </style> -->
+</head>
+
+<body> <!--Menampilkan konten HTML di Webpage -->
+  <!-- <button title="Good job" class="red-button" onclick="alert('Good job!');">
+       hello
+   </button>
+
+   <p>
+       paragraph of <button class="yellow-button" onclick="alert('okay everyone')">hello</button> text
+   </p>
+
+   <p>Create a button with the text <button>Click</button></p>
+
+   <button>Zaky</button> <button>coffee</button>
+
+   <p>Hello, world!</p>
+   <p>Today I am learning little bit of javascript</p>
+
+   <button class="cart">Add to cart</button> <button class="buy">Buy Now</button> -->
+  <p>Cart Quantity</p>
+
+  <button onclick="
+  
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Show Quantity</button>
+
+  <button onclick="
+    cartQuantity++;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Add to Cart</button>
+
+  <button onclick="
+    cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity} `);">+2</button>
+  <button onclick="
+  cartQuantity += 3;
+    console.log(`Cart quantity: ${cartQuantity}`);">+3</button>
+  <button onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset' );
+    console.log('Cart quantity: ' + cartQuantity );">Reset Cart</button>
+
+  <script>
+    // //  console.log(alert('Welcome!'));
+    // let variable1 = 3;
+    // console.log(variable1);
+
+    // let calculation = 2 + 2; 
+    // console.log(calculation);
+    // console.log(calculation + 2);
+
+    // let result = calculation + 2 + variable1; //4 + 2= 6 + 3 = 9
+    // console.log(result);
+
+    // let message = "Hello";
+    // console.log(message); console.log(";") // tetap berhasil karena JS secara otomatis memasukkan ; di akhir baris   
+
+    // variable1 = 5;
+    // console.log(variable1);
+
+    // variable1 = variable1 + 2;
+    // console.log(variable1);
+    let cartQuantity = 0;
+
+    console.log(typeof 'halo kamu'); // tipe string
+    console.log(typeof 3); // tipe integer
+    console.log(typeof cartQuantity); // memanggil variable
+  </script>
+</body>
+
+</html>
