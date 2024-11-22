@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--Memberitahu browser untuk menggunakan versi terbaru HTML -->
+<html lang="en">
+  <!--Menunjukkan seluruh WebPage-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <!-- <style>
+      .red-button{
+          background-color: rgb(196, 60, 60);
+          color: white;
+          border: none;
+      }
+      .yellow-button{
+          background-color: yellow;
+      }
+      .cart{
+          background-color: yellow;
+      }
+      .buy{
+          background-color: orange;
+      }
+  </style> -->
+  </head>
+
+  <body>
+    <p>Rock Paper Scissors</p>
+    <button
+      onclick="
+      const randomNumber=Math.random();
+
+      // membuat variabel let computerMove untuk bisa diakses diluar scope if-statement
+      let computerMove = '';
+
+      if(randomNumber >= 0  && randomNumber < 1/3){
+        // membuat variabel untuk dilakukan komparasi nantinya
+          computerMove = 'rock';
+      }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+          computerMove ='paper';
+      }else if(randomNumber >= 2/3 && randomNumber < 1){
+          computerMove ='scissors';
+      }
+
+
+      let result = '';
+      // nilai yang keluar berada antara 0 dan 1/3 maka tie
+      if(computerMove === 'rock'){
+        result='Tie.';
+      // nilai yang keluar antara 1/3 dan 2/3 maka computer win
+      }else if(computerMove === 'paper'){
+        result='You lose';
+      // nilai yang keluar antara 2/3 dan 1 maka player win
+      }else if(computerMove === 'scissors'){
+        result='You win';
+      }
+
+      alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+      
+    "
+    >
+      Rock
+    </button>
+
+    <button
+      onclick=" 
+      const nomorAcak=Math.random();
+
+    // membuat variabel let computerMove untuk bisa diakses diluar scope if-statement
+    let computerAction = '';
+
+    if(nomorAcak >= 0  && nomorAcak < 1/3){
+      // membuat variabel untuk dilakukan komparasi nantinya
+      computerAction = 'rock';
+    }else if(nomorAcak >= 1/3 && nomorAcak < 2/3){
+      computerAction ='paper';
+    }else if(nomorAcak >= 2/3 && nomorAcak < 1){
+      computerAction ='scissors';
+    }
+
+
+    let hasil = '';
+    // nilai yang keluar berada antara 0 dan 1/3 maka tie
+    if(computerAction === 'rock'){
+      hasil='You win';
+    // nilai yang keluar antara 1/3 dan 2/3 maka computer win
+    }else if(computerAction === 'paper'){
+      hasil='Tie.';
+    // nilai yang keluar antara 2/3 dan 1 maka player win
+    }else if(computerAction === 'scissors'){
+      hasil='You lose';
+    }
+
+    alert(`You picked paper. Computer picked ${computerAction}. ${hasil}`);"
+    >
+      Paper
+    </button>
+
+    <button
+      onclick="
+    const acakNomor=Math.random();
+
+    // membuat variabel let computerMove untuk bisa diakses diluar scope if-statement
+    let computerCalculate = '';
+
+    if(acakNomor >= 0  && acakNomor < 1/3){
+      // membuat variabel untuk dilakukan komparasi nantinya
+      computerCalculate = 'rock';
+    }else if(acakNomor >= 1/3 && acakNomor < 2/3){
+      computerCalculate ='paper';
+    }else if(acakNomor >= 2/3 && acakNomor < 1){
+      computerCalculate ='scissors';
+    }
+
+
+    let jawaban = '';
+    // nilai yang keluar berada antara 0 dan 1/3 maka tie
+    if(computerCalculate === 'rock'){
+      hasil='You lose';
+    // nilai yang keluar antara 1/3 dan 2/3 maka computer win
+    }else if(computerCalculate === 'paper'){
+      hasil='You win';
+    // nilai yang keluar antara 2/3 dan 1 maka player win
+    }else if(computerCalculate === 'scissors'){
+      hasil='Tie.';
+    }
+
+    alert(`You picked scissors. Computer picked ${computerCalculate}. ${hasil}`);"
+    >
+      Scissors
+    </button>
+    <br />
+    <p><a href="">Click Here</a> to see the final version of the project</p>
+
+    <script></script>
+  </body>
+</html>
